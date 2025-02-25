@@ -4,10 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearTasksButton = document.getElementById('clearTasksButton');
     const taskList = document.getElementById('taskList');
 
-    // Carregar tarefas do localStorage
     loadTasks();
 
-    // Adicionar tarefa
     addTaskButton.addEventListener('click', () => {
         const taskText = taskInput.value.trim();
         if (taskText) {
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Limpar todas as tarefas
     clearTasksButton.addEventListener('click', () => {
         localStorage.removeItem('tasks');
         loadTasks();
