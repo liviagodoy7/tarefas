@@ -64,7 +64,7 @@ li button:hover {
     background: rgb(3, 72, 104);
 }
 
-/* Media Queries para Responsividade */
+
 @media (max-width: 600px) {
     .container {
         padding: 15px;
